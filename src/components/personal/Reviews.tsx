@@ -9,7 +9,7 @@ import Phone from './Phone'
 const PHONES = [
   '/testimonials/1.jpg',
   '/testimonials/2.jpg',
-  '/testimonials/3.jpg',
+  '/testimonials/3.jpg', 
   '/testimonials/4.jpg',
   '/testimonials/5.jpg',
   '/testimonials/6.jpg',
@@ -29,7 +29,7 @@ function splitArray<T>(array: Array<T>, numParts: number) {
   return result
 }
 
-function ReviewColumn({
+function  ReviewColumn({
   reviews,
   className,
   reviewClassName,
