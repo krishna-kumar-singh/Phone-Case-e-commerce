@@ -14,10 +14,12 @@ function page() {
   const [uploadProgress, setUploadProgress] = useState<number>(0);
   const { startUpload,isUploading } = useUploadThing("imageUploader", {
     onClientUploadComplete: ([data]) => {
-      const configId = data.serverData.configId;
+      console.log(data)
+      const configId = data.serverData?.configId
+      console.log("configId",configId)
       startTransition(() => {
-        router.push(`/configure/design?id=${configId}`);
-      });
+        router.push(`/configure/design?id=${configId}`)
+      })
     },
 
     onUploadProgress(p) {
