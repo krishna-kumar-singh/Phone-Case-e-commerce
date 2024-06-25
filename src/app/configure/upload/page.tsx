@@ -7,7 +7,7 @@ import { Image, Loader2, MousePointerSquareDashed } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import Dropzone, { FileRejection } from "react-dropzone";
-function page() {
+function Page() {
   const router = useRouter();
   const {toast} = useToast()
   const [isDragOver, setIsDragOver] = useState<Boolean>(false);
@@ -114,4 +114,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
